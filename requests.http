@@ -1,0 +1,33 @@
+### API-0 Gets All Users
+GET   http://localhost:3000/users
+
+### API-1 To Register the User
+POST  http://localhost:3000/register
+Content-Type: application/json 
+
+{
+  "username": "sai_sharan12345",
+  "name": "Sai Sharan",
+  "password": "12345",
+  "gender": "male",
+  "location": "Chennai"
+}
+
+### API-2 To Login the User
+POST  http://localhost:3000/login
+Content-Type: application/json 
+
+{
+  "username": "sai_sharan12345",
+  "password": "12345"
+}
+
+### API-3 To Change the User Password
+PUT  http://localhost:3000/change-password
+Content-Type: application/json 
+
+{
+  "username": "sai_sharan12345",
+  "oldPassword": "12345",
+  "newPassword": "123123"
+}
